@@ -87,13 +87,13 @@ function calculomacro() {
     let calculoproteina
     rl.question('Digite o seu peso', (peso) => {
         rl.question('Digite o quanto você quer de proteína: 1.8kg, 2.0 kg ou 2.2 kg:', (proteina = toString().trim()) => {
-            rl.question('Digite a quantidade de gordura: 0.5kg, 0.7kg ou 1kg:', (gordura = toString().trim()) => {
+            rl.question('Digite a quantidade de gordura: 0.5kg, 0.7kg ou 1kg:', (gordura) => {
                 if (proteina == "2.0" || proteina == "1.8" || proteina == "2.2") {
                     calculoproteina = peso * proteina
 
 
                 }
-                 else if (gordura == "0.5" || gordura == "0.7" || gordura == "1.0") {
+                 else  {
                     calculogordura = peso * gordura
                 }
                 macros.push({ proteina: calculoproteina, gordura: calculogordura })
