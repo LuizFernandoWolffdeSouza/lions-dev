@@ -1,6 +1,6 @@
 
 
-let gostadecafe
+let gostadecafe = true
 let resposta
 
 
